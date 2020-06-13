@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <header class="main-header">
+            <div class="header-h1"> 
+                <h1>THE CODE REVIEW</h1>
+            </div>
+            
+        </header>
+
+        <section class="sign-up-header">
+            <h2>Signup for our newsletter</h2>
+            <p>Get the latest news on how your code is doing right in your inbox</p>
+        </section>
+
+        <main class="main-content">
+
+            
+                <section class="contact-information container flex">
+                    <fieldset>
+                        <legend class="item">Contact Information</legend>
+                        <ul>
+                            <li>
+                            <div class="form-group ">
+                            <label class="item" for="name">Full Name</label>
+                            <input class="item item-2" type="text" name="user_name" id="name" placeholder="Required" required>
+                            </div>
+                            </li>
+
+                            <li>
+                            <div class="form-group ">
+                            <label class="item" for="email">Email Address</label>
+                            <input class="item item-2" type="email" name="user_email" id="email" placeholder="Required" required>
+                            </div>
+                            </li>
+
+                            <li>
+                            <div class="form-group ">
+                            <label class="item" for="telephone">Phone Number</label>
+                            <input class="item item-2" type="tel" name="user_tel" id="telephone" placeholder="For example: +65 XXXX XXXX">
+                            </div>
+                            </li>
+
+                            <li>
+                            <div class="form-group ">
+                            <label class="item" for="address">Street Address</label>
+                            <input class="item item-2" type="text" name="user_address" id="address">
+                            </div>
+                            </li>
+
+                            <li>
+                            <div class="form-group ">
+                            <label class="item" for="city">City</label>
+                            <input class="item item-2" type="text" name="user_city" id="city">
+                            </div>
+                            </li>
+
+                            <li>
+                            <div class="form-group ">
+                            <label class="item" for="state">State</label>
+                            
+                                <select class="item item-2" id="state" name="user_state">
+                                    <option value="" disabled selected>Choose State</option>
+                                    <option>Johor</option>
+                                    <option>Kuala Lumpur</option>
+                                </select>
+                            </div>
+                            </li>
+
+                            <li>
+                                <div class="form-group ">
+                                <label class="zip-label" for="zipCode">Zip Code</label>
+                                <input class="item-2 zip-item" type="text" name="user_zipCode" id="zipCode">
+                                </div>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </section>
+            
+
+
+                    <section class="newsletter container">
+                        <fieldset class="newsletter-fieldset">
+                            <legend>Newsletter</legend>
+                                
+                            <div class="news-div">
+                                <p>Select the newsletters you would like to recieve</p>
+                                <div class="item"><input type="checkbox" id="news_html" name="HTML_news" value="html">
+                                <label for="news_html">HTML News</label>
+                                </div>
+
+                                <div class="item"><input type="checkbox" id="news_css" name="CSS_news" value="css">
+                                <label for="news_css">CSS News</label>
+                                </div>
+
+                                <div class="item">
+                                <input type="checkbox" id="news_javascript" name="javascript_news" value="javascript"> 
+                                <label for="news_javascript">Javascript News</label>
+                                </div>
+                            </div>
+                                
+                            <div class="format-div">
+                                <p class="item">Newsletter format</p>
+                                
+                                <input type="radio" id="format_html" name="Newsletter_format" value="HTML">
+                                <label for="format_html">HTML</label>
+                                </div>
+
+                                <div class="item">
+                                <input type="radio" id="format_text" name="Newsletter_format" value="plain_text">
+                                <label for="format_text">Plain text</label>
+                                </div>
+                                
+                            
+                            <div class="item textarea-div">
+                            <label for="user_comment">Other topics you's like to hear about</label><br><br>
+                            <textarea id="user_comment" name="comment" rows="8" cols="40"></textarea>
+                            </div>
+                        </fieldset>
+                    </section>
+                
+                
+
+                <input type="submit" value="Sign Up">
+            
+
+
+        </main>
+
+        <footer class="main-footer">
+            <p>Copyright The Code Review</p>
+        </footer>
+
+    </form>
+</body>
+</html>
